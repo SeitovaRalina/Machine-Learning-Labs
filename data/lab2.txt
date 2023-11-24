@@ -1,0 +1,51 @@
+- `Unnamed: 0` - Индексация
+- `Film` - Фильм
+- `Oscar Year` - Год получения премии Оскар
+- `Film Studio/Producer(s)` - Киностудия/продюсеры
+- `Award` - Награда
+- `Year of Release` - Год выпуска
+- `Movie Time` - Длительность фильма
+- `Movie Genre` - Жанр фильма
+- `IMDB Rating` - Рейтинг IMDB
+- `IMDB Votes` - Голоса IMDB
+
+
++`Movie Info` - Информация о фильме
++ `Genres` - Жанры
+groupby 'Movie Genre', 'Genres' moda
++`Critic Consensus` - Общая рецензия критиков о фильме
++ `Content Rating` - Рейтинг контента
+groupby 'Directors'
++ `Directors` - Режиссеры
+groupby `Film Studio/Producer(s)`
++`Authors` - Авторы
++`Actors` - Актеры
+- `Original Release Date` - Дата оригинального релиза
+середина года 
+- `Streaming Release Date` - Дата релиза на стриминговых сервисах
++ `Production Company` - Производственная компания
+groupby 'Film Studio/Producer(s)', 'Production Company'
+
+ 
+- `Tomatometer Status` - Статус томатометра
+- `Tomatometer Rating` - Томатометр Рейтинг
+- `Tomatometer Count` - Количество томатометров
+- `Audience Status` - Статус аудитории
+- `Audience Rating` - Рейтинг аудитории
+- `Audience Count` - Количество зрителей
+- `Tomatometer Top Critics Count` - Количество лучших критиков томатометра
+- `Tomatometer Fresh Critics Count` - Количество свежих критиков томатометра
+- `Tomatometer Rotten Critics Count` - Количество гнилых критиков томатометра
+
+
+
+Audience Rating                     132 - корр с IMDB Rating
+
+Tomatometer Rating                  132 - -1
+Audience Count                      132 - медиана по году
+
+Tomatometer Count                   132 - среднее по году
+
+Tomatometer Top Critics Count       132 - корр
+Tomatometer Fresh Critics Count     132 - корр
+Tomatometer Rotten Critics Count    132 - корр

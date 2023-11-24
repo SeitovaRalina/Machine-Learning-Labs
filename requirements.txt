@@ -1,0 +1,9 @@
+notebook
+scikit-learn
+pandas
+matplotlib
+seaborn
+tensorflow
+jupyterthemes
+missingno
+pycaret
