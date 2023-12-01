@@ -14,7 +14,7 @@ class Node():
 
 class ClassificationAndRegressionTrees():
     def __init__(self, min_samples_split=2, max_depth=2, criterion = None):
-        # initialize the root of the tree - корень дерева
+        # корень дерева
         self.root = None
 
         # classification or regression??? - функция для расчета примеси
@@ -79,7 +79,7 @@ class ClassificationAndRegressionTrees():
         return best_split
     
     def split(self, dataset, feature_index, threshold):
-        # левая ветвь - выбрать те строки, которые в преполагаемом столбце имеют значение не меньше порогового
+        # левая ветвь - выбрать те строки, которые в преполагаемом столбце имеют значение >= порогового
         dataset_left = np.array([row for row in dataset if row[feature_index]<=threshold])
         # правая ветвь - -||- меньше порогового
         dataset_right = np.array([row for row in dataset if row[feature_index]>threshold])
